@@ -1,7 +1,8 @@
 import boto3
+import json
 
 def lambda_handler(event, context):
-    # Entrada
+    # Entrada (no se espera un cuerpo JSON para listar buckets)
 
     # Proceso
     s3 = boto3.client('s3')
